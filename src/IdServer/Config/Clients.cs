@@ -93,6 +93,44 @@ namespace IdServer.Config
                 new Client
                 {
                     Enabled = true,
+                    ClientName = "IFAR Extranet",
+                    ClientId = "ifar.extranet",
+                    AllowedGrantTypes = GrantTypes.Implicit,
+                    AllowAccessTokensViaBrowser = true,
+                    RedirectUris = new List<string>
+                    {
+                        "http://localhost:8010"
+                    },
+
+                    AllowedCorsOrigins = new List<string>
+                    {
+                        "http://localhost:8010"
+                    },
+
+                    AllowAccessToAllScopes = true
+                },
+                new Client
+                {
+                    Enabled = true,
+                    ClientName = "IFAR Extranet",
+                    ClientId = "ifar.extranet2",
+                    AllowedGrantTypes = GrantTypes.Implicit,
+                    AllowAccessTokensViaBrowser = true,
+                    RedirectUris = new List<string>
+                    {
+                        "http://localhost:21308"
+                    },
+
+                    AllowedCorsOrigins = new List<string>
+                    {
+                        "http://localhost:21308"
+                    },
+
+                    AllowAccessToAllScopes = true
+                },
+                new Client
+                {
+                    Enabled = true,
                     ClientName = "OAuth2 Ng2 Client Service",
                     ClientId = "js.ng2",
                     AllowedGrantTypes = GrantTypes.Implicit,

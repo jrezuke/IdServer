@@ -97,6 +97,10 @@ namespace IdServer.Config
                     ClientId = "ifar.extranet",
                     AllowedGrantTypes = GrantTypes.Implicit,
                     AllowAccessTokensViaBrowser = true,
+                    PostLogoutRedirectUris = new List<string>
+                    {
+                        "http://localhost:8010"
+                    },
                     RedirectUris = new List<string>
                     {
                         "http://localhost:8010"

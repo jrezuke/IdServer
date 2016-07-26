@@ -103,12 +103,14 @@ namespace IdServer.Config
                     },
                     RedirectUris = new List<string>
                     {
-                        "http://localhost:8010"
+                        "http://localhost:8010",
+                        "http://localhost:34138"
                     },
 
                     AllowedCorsOrigins = new List<string>
                     {
-                        "http://localhost:8010"
+                        "http://localhost:8010",
+                        "http://localhost:34138"
                     },
 
                     AllowAccessToAllScopes = true
